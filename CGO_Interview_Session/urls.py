@@ -18,7 +18,6 @@ from django.contrib import admin
 from django.http.response import HttpResponse
 from django.shortcuts import render
 from . import views
-from .forms import CreateNewList
 
 
 urlpatterns = [
