@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %} CGO : Frog {% endblock %}
+
+{% block content %} <h1>CGO Interview Session : Frog</h1>
+<p>A small frog wants to get to the other side of a river.<br/>
+    The frog is initially located on one bank of the river (position 0)<br/>
+    and wants to get to the opposite bank (position X+1).<br/>
+    Leaves fall from a tree onto the surface of the river.<br/><br/>
+    You are given: <br/>
+    1.) an integer <b>X</b> is the number of positions that a frog need to jump to cross to the opposite side of the river.<br/>
+    
+    2.) an array <b>A</b> consisting of N integers representing the falling leaves.<br/>
+    A[K] represents the position where one leaf falls at time K, measured in seconds.</p>
+<form method="post" action="/">
+    {% csrf_token %}
+    {{form.as_p}}
+    <button type="submit", name="compute">Compute</button>
+</form>
+
+{% endblock %}
